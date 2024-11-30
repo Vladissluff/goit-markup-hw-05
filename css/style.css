@@ -598,7 +598,6 @@ input::placeholder {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
 }
 
@@ -612,6 +611,10 @@ input::placeholder {
 
 .modal-form-field {
   margin-bottom: 16px;
+}
+
+.icon-input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message {
@@ -633,6 +636,11 @@ input::placeholder {
   border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+}
 .modal-form-message:hover,
 .modal-form-message:focus {
   border-color: #4d5ae5;
