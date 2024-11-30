@@ -638,66 +638,58 @@ input::placeholder {
   border-color: #4d5ae5;
 }
 
-.modal-form-check {
+.modal-form-checkbox {
   display: flex;
   justify-items: center;
   margin-bottom: 24px;
 }
 
-input[type="checkbox"]:checked
-  + .modal-form-agreement-text
-  .modal-form-checkbox {
-  background-color: #404bbf;
-  border-color: #404bbf;
-  fill: #ffffff;
-}
-
-.modal-form-agreement-text {
+.label-input {
   font-size: 12px;
+  color: rgba(142, 143, 153, 1);
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
-.modal-form-checkbox {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  fill: transparent;
+.privacy-link {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+.privacy-label {
+  cursor: pointer;
+}
+.modal-checkbox {
+  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  cursor: pointer;
   margin-right: 8px;
-  transition: 150ms ease-in;
-  transition-property: background-color, border-color;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-checkbox-icon {
+.modal-checkbox .icons-contact {
   opacity: 0;
-  transition: 150ms ease-in;
-  transition-property: opacity;
 }
-
-input[type="checkbox"]:checked
-  + .modal-form-agreement-text
-  .modal-form-checkbox
-  .modal-form-checkbox-icon {
+.privacy:checked + .privacy-label > .modal-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.privacy:checked + .privacy-label > .modal-checkbox .icons-contact {
   opacity: 1;
 }
-
-.modal-form-agreement-link {
-  color: #4d5ae5;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-}
-
 .form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin: 0 auto;
+  max-width: 169px;
+  height: 56px;
 }
