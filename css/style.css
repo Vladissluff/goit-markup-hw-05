@@ -1,4 +1,4 @@
-bbody {
+body {
   background-color: white;
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -441,6 +441,8 @@ ol {
   width: 75px;
   height: 24px;
   margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-form {
@@ -555,6 +557,8 @@ input::placeholder {
   margin-bottom: 16px;
   color: #2e2f42;
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .form-icon-input:focus + svg {
