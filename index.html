@@ -494,7 +494,7 @@
       </div>
     </footer>
     <!--modal-window-->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-button" type="button">
         <svg class="modal-button" width="8" height="8">
@@ -550,19 +550,19 @@
       <label class="modal-form-label" for="user-message">Comment</label>
       <textarea
       class="modal-form-message"
-      name="user-message"
-      id="user-message"
+      name="user-comment"
+      id="user-comment"
       placeholder="Text input"
       ></textarea>
     </div>
-
-    <div class="modal-form-agreement">
+    <div class="modal-form-check">
       <input
-      class="visually-hidden"
       type="checkbox"
-      name="user-agreement"
-      id="user-agreement"
-      checked
+              class="privacy visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+              checked
       />
       <label class="modal-form-agreement-text" for="user-agreement">
         <span class="modal-form-checkbox">
