@@ -1,4 +1,4 @@
-body {
+bbody {
   background-color: white;
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -607,11 +607,11 @@ input::placeholder {
 }
 
 .modal-form-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
-.icon-input {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-form-field-footer {
+  margin-bottom: 16px;
 }
 
 .modal-form-message {
