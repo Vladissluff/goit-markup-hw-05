@@ -429,8 +429,6 @@ ol {
 }
 
 .footer-input {
-  width: 453px;
-  height: 80px;
   margin-left: 80px;
 }
 
@@ -567,8 +565,6 @@ input::placeholder {
 
 .modal-form-wrapper {
   position: relative;
-  padding-top: 4px;
-  padding-bottom: 8px;
 }
 
 .modal-form-icon {
@@ -702,3 +698,4 @@ input::placeholder {
   display: block;
   height: 56px;
 }
+
